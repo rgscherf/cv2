@@ -1,7 +1,6 @@
 (ns cv2.handler
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
-            [environ "1.0.0"]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
 
 (defroutes app-routes
