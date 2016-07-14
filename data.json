@@ -1,0 +1,65 @@
+{
+    "name": "Robert Scherf",
+    "blurb": "...is building pragmatic software.",
+    "experience": [{
+        "fontawesome_pointer": "graduation-cap",
+        "time": "2013 - 2015",
+        "title": "Master of Public Policy",
+        "description": "Focus in Digital Government"
+    }, {
+        "fontawesome_pointer": "paragraph",
+        "time": "2015 - Present",
+        "title": "Communications Consultant",
+        "description": "Ontario Government"
+    }, {
+        "fontawesome_pointer": "terminal",
+        "time": "2016 - Present",
+        "title": "Freelance Developer",
+        "description": "Toronto, Ontario"
+    }],
+    "skillsLeft": [{
+        "name": "Project Management",
+        "level": 4
+    }, {
+        "name": "Communication",
+        "level": 4
+    }, {
+        "name": "Leadership",
+        "level": 4
+    }, {
+        "name": "Python",
+        "level": 4
+    }, {
+        "name": "HTML & CSS",
+        "level": 3
+    }],
+    "skillsRight": [{
+        "name": "JavaScript",
+        "level": 3
+    }, {
+        "name": "Elm",
+        "level": 3
+    }, {
+        "name": "C#",
+        "level": 3
+    }, {
+        "name": "Java",
+        "level": 2
+    }, {
+        "name": "PHP",
+        "level": 2
+    }],
+    "contact": [{
+        "link": "mailto:rgscherf@gmail.com",
+        "fontawesome_pointer": "envelope-o"
+    }, {
+        "link": "http://twitter.com/rgscherf",
+        "fontawesome_pointer": "twitter"
+    }, {
+        "link": "https://github.com/rgscherf",
+        "fontawesome_pointer": "github"
+    }, {
+        "link": "https://ca.linkedin.com/in/rgscherf",
+        "fontawesome_pointer": "linkedin-square"
+    }]
+}

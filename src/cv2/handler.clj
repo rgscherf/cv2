@@ -1,7 +1,9 @@
 (ns cv2.handler
   (:require [compojure.core :refer :all]
+            ; [clojure.pprint :refer [pprint]]
             [cheshire.core :as c]
             [compojure.route :as route]
+            [clj-http.client :as http]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
 
 (defn headerize
@@ -25,8 +27,26 @@
       (headerize)
       (c/generate-string)))
 
+(defn user-commits
+  "retrieve user's recent commits from external API"
+  []
+  (-> "http://twitbackend.herokuapp.com/user?user=rgscherf"
+      (http/get)
+      (:body)
+      (c/generate-string true)))
+
+(defn create-payload
+  "retrieve user data for template"
+  []
+  (let [data (-> "data.json"
+                 (slurp)
+                 (c/parse-string true))]
+    (pprint data)))
+
+
 (defroutes app-routes
-  (GET "/tell" [] (jsonize [true "hello, how is everyone?"]))
+  (GET "/user" [] (user-commits))
+  (GET "/tell" [] (create-payload))
   (GET "/" [] "Hello World")
   (route/not-found "Not Found"))
 
