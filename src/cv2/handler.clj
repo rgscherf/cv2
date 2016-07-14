@@ -38,10 +38,8 @@
 (defn create-payload
   "retrieve user data for template"
   []
-  (let [data (-> "data.json"
-                 (slurp)
-                 (c/parse-string true))]
-    (pprint data)))
+  (let [data (slurp "data.json")]
+    data))
 
 
 (defroutes app-routes
