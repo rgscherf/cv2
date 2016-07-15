@@ -46,7 +46,7 @@
   (h/html
     [:head 
       [:title "rgscherf-cv"]
-      ; [:link {:rel "icon" :type "image/png" :href "../css/style.css"}] 
+      [:link {:rel "icon" :type "image/png" :href "favicon-bw.png"}] 
       [:link {:rel "stylesheet" :href "style.css"}] 
       [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css?family=Arvo|Bungee+Shade|Lobster+Two|VT323|Open+Sans|Roboto+Mono"}]
       [:script {:type "text/javascript" :src "https://use.fontawesome.com/3214b7792e.js"}]]
