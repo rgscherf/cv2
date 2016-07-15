@@ -2,17 +2,17 @@
     "name": "Robert Scherf",
     "blurb": "...is building pragmatic software.",
     "experience": [{
-        "fontawesome_pointer": "graduation-cap",
+        "fontawesome_pointer": "fa-graduation-cap",
         "time": "2013 - 2015",
         "title": "Master of Public Policy",
         "description": "Focus in Digital Government"
     }, {
-        "fontawesome_pointer": "paragraph",
+        "fontawesome_pointer": "fa-paragraph",
         "time": "2015 - Present",
         "title": "Communications Consultant",
         "description": "Ontario Government"
     }, {
-        "fontawesome_pointer": "terminal",
+        "fontawesome_pointer": "fa-terminal",
         "time": "2016 - Present",
         "title": "Freelance Developer",
         "description": "Toronto, Ontario"

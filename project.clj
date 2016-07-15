@@ -5,7 +5,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [cheshire "5.4.0"]
                  [clj-http "2.2.0"]
-                 [selmer "1.0.7"]
+                 [hiccup "1.0.5"]
                  [compojure "1.5.1"]
                  [ring/ring-defaults "0.2.1"]]
   :plugins [[lein-ring "0.9.7"]]

@@ -1,0 +1,243 @@
+/* GENERAL */
+body {
+  background: #EDDDBC;
+  color: rgb(68, 67, 71);
+}
+
+td {
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(68, 67, 71);
+}
+
+a:link {
+  color: rgb(68, 67, 71);
+}
+
+.arvo {
+  font-family: 'Arvo', serif;
+}
+.open {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+#contentWrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+ /* SECTION META */
+
+.sectionHeader {
+  font-family: 'Arvo', serif;
+  border-top: 3px solid rgb(68, 67, 71);
+  border-bottom: 2px dotted rgb(68, 67, 71);
+  width: 90%;
+  font-size: 36px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sectionBody {
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  font-size: 20px;
+  padding: 20px;
+  margin: 30 auto 30;
+}
+
+.basicFlex {
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+/* PAGE HEADER */
+
+#headline {
+  font-family: 'Arvo', serif;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#subline {
+  font-family: 'Arvo', serif;
+  font-size: 24px;
+  color: #57565A;
+  width: 50%;
+  margin: 0 auto 60;
+  text-align: center;
+}
+
+
+/* EXPERIENCE */
+
+#experienceCards {
+  padding-left: 30px;
+}
+
+.experienceCard {
+  display:flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.experienceDescription {
+  padding: 15px;
+  padding-left: 20px;
+}
+
+.experienceIcon {
+  color: #63A3BB;
+}
+
+/*SKILLS SPECIAL HEADER*/
+
+#skillsHeaderWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skillsLegend {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 16px;
+}
+
+#skillsLegend > div {
+  flex: 1 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* SKILLS */
+
+.skillWrapper {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.skillSpacer {
+  width: 20px;
+}
+
+.skillSide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.skillName {
+  font-size: 20px;
+}
+.skillLevel {
+  font-size: 16px;
+  width: 200px;
+}
+
+/* SELECTED PROJECTS */
+
+#projectTable {
+    margin: auto;
+    font-size: 20px;
+}
+#projectTable tr {
+    height: 120px;
+}
+.projectTableSpacer {
+    width: 30px;
+}
+
+.projectLogoContainer {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid rgb(68, 67, 71);
+    border-radius: 2px;
+}
+
+.projectSpan {
+    position: relative;
+}
+
+#projectLogoGainful {
+    background: rgb(106,206,172);
+    color: rgb(6,8,6);
+}
+#projectSpanGainful {
+    font-size: 60px;
+    font-family: 'Lobster Two', cursive;
+    top: 10%;
+}
+
+#projectLogoTwit {
+    background: rgb(235,165,69);
+    color: black;
+}
+#projectSpanTwit {
+    font-size: 60px;
+    font-family: 'Bungee Shade', cursive;
+    top: 10px;
+    position: absolute;
+    left: 5px;
+}
+
+#projectLogoLord {
+    background: black;
+    color: rgb(178,86,225);
+}
+#projectSpanLord {
+    font-size: 40px;
+    font-family: 'VT323', monospace;
+    top: 28%;
+}
+
+/* COMMITS */
+
+.commitCard {
+    margin: 15 5;
+    width: 300px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.commitMessage {
+    margin:10 10;
+    border-left: 2px solid rgb(68, 67, 71);
+    padding-left: 10px;"
+}
+
+.commitInfoBlock {
+    font-size: 16px;
+    text-align: right;
+}
+
+.commitInfoBlock a {
+    color: #63A3BB;
+}
+
+/* CONTACT INFO */
+
+#contactCards {
+  font-size: 24;
+  margin-bottom: 50px;
+}
