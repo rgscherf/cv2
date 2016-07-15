@@ -78,7 +78,7 @@
                 [:td 
                   [:a {:href "http://gainful.work"}
                     [:div#projectLogoGainful.projectLogoContainer
-                      [:span#projectSpanGainful.projectSpan "Gainful"]]]]
+                      [:span#projectSpanGainful "Gainful"]]]]
                 [:td.projectTableSpacer]
                 [:td
                   [:div "Simple, sane aggregation for public service job postings."]
@@ -86,8 +86,8 @@
               [:tr
                 [:td
                   [:a {:href "http://twitbackend.herokuapp.com"}
-                    [:div#projectLogoTwit.projectLogoContainer {:style "position:relative;"}
-                      [:div#projectSpanTwit.projectSpan "TWIT"]]]]
+                    [:div#projectLogoTwit.projectLogoContainer
+                      [:div#projectSpanTwit "TWIT"]]]]
                 [:td.projectTableSpacer]
                 [:td
                   [:div "Github commit timeline and explorer."]
@@ -96,7 +96,7 @@
                 [:td
                   [:a {:href "https://rgscherf.itch.io/potion-lord"}
                     [:div#projectLogoLord.projectLogoContainer
-                      [:span#projectSpanLord.projectSpan "POTION LORD"]]]]
+                      [:span#projectSpanLord "POTION LORD"]]]]
                 [:td.projectTableSpacer]
                 [:td
                   [:div "Award-winning retro action game made in one weekend."]

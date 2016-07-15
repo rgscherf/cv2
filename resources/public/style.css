@@ -171,13 +171,11 @@ a:link {
 .projectLogoContainer {
     width: 200px;
     height: 100px;
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgb(68, 67, 71);
     border-radius: 2px;
-}
-
-.projectSpan {
-    position: relative;
 }
 
 #projectLogoGainful {
@@ -187,7 +185,6 @@ a:link {
 #projectSpanGainful {
     font-size: 60px;
     font-family: 'Lobster Two', cursive;
-    top: 10%;
 }
 
 #projectLogoTwit {
@@ -197,9 +194,6 @@ a:link {
 #projectSpanTwit {
     font-size: 60px;
     font-family: 'Bungee Shade', cursive;
-    top: 10px;
-    position: absolute;
-    left: 5px;
 }
 
 #projectLogoLord {
@@ -209,7 +203,6 @@ a:link {
 #projectSpanLord {
     font-size: 40px;
     font-family: 'VT323', monospace;
-    top: 28%;
 }
 
 /* COMMITS */
