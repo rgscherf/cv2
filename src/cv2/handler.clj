@@ -1,5 +1,6 @@
 (ns cv2.handler
   (:require [compojure.core :refer :all]
+            [cv2.user :refer [assemble-user-map]]
             [cv2.index :refer [render-page]]
             [clojure.pprint :refer [pprint]]
             [cheshire.core :as c]
@@ -32,6 +33,7 @@
       full-data)))
 
 (defroutes app-routes
+  (GET "/usermap" [] (c/generate-string (assemble-user-map "rgscherf")))
   (GET "/tell" [] (create-payload true))
   (GET "/" [] (render-page (create-payload false)))
   (route/resources "/")
