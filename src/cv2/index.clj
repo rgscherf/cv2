@@ -43,6 +43,7 @@
 
 (defn render-page
   [data]
+  (def *in data)
   (h/html
     [:head 
       [:title "rgscherf-cv"]

@@ -4,6 +4,8 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [cheshire "5.4.0"]
+                 [spyscope "0.1.5"]
+                 [clj-time "0.12.0"]
                  [clj-http "2.2.0"]
                  [hiccup "1.0.5"]
                  [compojure "1.5.1"]
