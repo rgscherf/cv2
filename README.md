@@ -1,6 +1,8 @@
 # cv2
 
-FIXME
+This is the source for my resume site, [scherf.works][]
+
+[scherf.works]: http://scherf.works
 
 ## Prerequisites
 
@@ -16,4 +18,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 Rob Scherf
