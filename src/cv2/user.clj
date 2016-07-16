@@ -1,6 +1,5 @@
 (ns cv2.user
   (:require [clj-http.client :as http]
-            [spyscope.core :refer :all]
             [clj-time.core :as t]
             [clj-time.format :as formatter]
             [cheshire.core :as c]))
@@ -48,7 +47,7 @@
   [c]
   (let [time-obj (-> (:timestamp_raw c)
                      (formatter/parse)
-                     (t/to-time-zone (t/time-zone-for-offset -4)))
+                     (t/to-time-zone (t/time-zone-for-offset -5)))
         pretty-time (formatter/unparse (formatter/formatter "h:mma MMMM dd") time-obj)
 
         repo-name (first (re-find #"(?<=repos/)(.*)(?=/commits)" (:url c))) 

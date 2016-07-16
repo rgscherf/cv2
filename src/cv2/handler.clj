@@ -1,17 +1,18 @@
 (ns cv2.handler
   (:require [compojure.core :refer :all]
-            [spyscope.core :refer :all]
+            [compojure.route :as route]
+            [clojure.pprint :refer [pprint]]
+            [clojure.java.io :as io]
+            [cheshire.core :as c]
+            [clj-http.client :as http]
             [cv2.user :refer [assemble-user-map]]
             [cv2.index :refer [render-page]]
-            [clojure.pprint :refer [pprint]]
-            [cheshire.core :as c]
-            [compojure.route :as route]
-            [clj-http.client :as http]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
 
 (defn user-data
   []
-  (-> "resources/data.json"
+  (-> "data.json"
+      (io/resource)
       (slurp)
       (c/parse-string true)))
 
