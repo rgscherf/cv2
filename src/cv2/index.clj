@@ -1,7 +1,5 @@
 (ns cv2.index
-  (:require [hiccup.core :as h]
-            [clojure.java.io :as io])
-  (:import java.net.URI))
+  (:require [hiccup.core :as h]))
 
 (defn experience-snippet
   [experience]
@@ -43,17 +41,13 @@
       [:i {:aria-hidden "true"
            :class (str "fa fa-3x experienceIcon fa-" (:fontawesome_pointer contact))}]]])
 
-(def style-uri (URI. "style.css"))
-(def favi-uri (URI. "favicon-bw.png"))
-
 (defn render-page
   [data]
-  (def *in data)
   (h/html
     [:head 
       [:title "rgscherf-cv"]
-      [:link {:rel "icon" :type "image/png" :href favi-uri}] 
-      [:link {:rel "stylesheet" :href style-uri}] 
+      [:link {:rel "icon" :type "image/png" :href "https://s3.amazonaws.com/lein-beanstalk.cv2/favicon-bw.png"}] 
+      [:link {:rel "stylesheet" :href "https://s3.amazonaws.com/lein-beanstalk.cv2/style.css"}] 
       [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css?family=Arvo|Bungee+Shade|Lobster+Two|VT323|Open+Sans|Roboto+Mono"}]
       [:script {:type "text/javascript" :src "https://use.fontawesome.com/3214b7792e.js"}]]
     [:body
