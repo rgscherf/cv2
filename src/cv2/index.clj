@@ -19,7 +19,7 @@
 
 (defn skill-snippet
   [width skill]
-  [:div.skillSide 
+  [:div.skillSide
     [:div.skillName {:style (str "width:" width "px;")} (:name skill)]
     [:div.skillLevel (repeat (:level skill) [:i.experienceIcon.fa.fa-cube.fa-2x {:aria-hidden "true"}])]])
 
@@ -44,10 +44,10 @@
 (defn render-page
   [data]
   (h/html
-    [:head 
+    [:head
       [:title "rgscherf-cv"]
-      [:link {:rel "icon" :type "image/png" :href "https://s3.amazonaws.com/lein-beanstalk.cv2/favicon-bw.png"}] 
-      [:link {:rel "stylesheet" :href "https://s3.amazonaws.com/lein-beanstalk.cv2/style.css"}] 
+      [:link {:rel "icon" :type "image/png" :href "https://s3.amazonaws.com/lein-beanstalk.cv2/favicon-bw.png"}]
+      [:link {:rel "stylesheet" :href "https://s3.amazonaws.com/lein-beanstalk.cv2/style.css"}]
       [:link {:rel "stylesheet" :href "https://fonts.googleapis.com/css?family=Arvo|Bungee+Shade|Lobster+Two|VT323|Open+Sans|Roboto+Mono"}]
       [:script {:type "text/javascript" :src "https://use.fontawesome.com/3214b7792e.js"}]]
     [:body
@@ -68,14 +68,14 @@
                   (map skill-legend-snippet [[4 "Expert"] [3 "Advanced"] [2 "Experienced"]])]]]]
           [:div.sectionBody
             [:div.skillWrapper {:style "margin-left:50px;"}
-              [:div (map (partial skill-snippet 210) (:skillsLeft data) )]
-              [:div (map (partial skill-snippet 110) (:skillsRight data) )]]]]
+              [:div (map (partial skill-snippet 210) (:skillsLeft data))]
+              [:div (map (partial skill-snippet 110) (:skillsRight data))]]]]
         [:div#projects
           [:div.sectionHeader {:style "margin-bottom: 20px;"} "Selected Projects"]
           [:div.sectionBody
             [:table#projectTable
               [:tr
-                [:td 
+                [:td
                   [:a {:href "http://gainful.work"}
                     [:div#projectLogoGainful.projectLogoContainer
                       [:span#projectSpanGainful "Gainful"]]]]
@@ -85,13 +85,13 @@
                   [:div "Django / BeautifulSoup / Elm"]]]
               [:tr
                 [:td
-                  [:a {:href "http://twitbackend.herokuapp.com"}
+                  [:a {:href "http://twit.name"}
                     [:div#projectLogoTwit.projectLogoContainer
                       [:div#projectSpanTwit "TWIT"]]]]
                 [:td.projectTableSpacer]
                 [:td
                   [:div "Github commit timeline and explorer."]
-                  [:div "ExpressJS / React"]]]
+                  [:div "Clojure / Reagent"]]]
               [:tr
                 [:td
                   [:a {:href "https://rgscherf.itch.io/potion-lord"}
@@ -109,4 +109,3 @@
           [:div.sectionHeader "Contact"]
           [:div#contactCards.sectionBody.basicFlex
             (map contact-snippet (:contact data))]]]]))
-

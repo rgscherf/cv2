@@ -31,7 +31,7 @@
         "level": 4
     }, {
         "name": "HTML & CSS",
-        "level": 3
+        "level": 4
     }],
     "skillsRight": [{
         "name": "JavaScript",
@@ -40,13 +40,13 @@
         "name": "Elm",
         "level": 3
     }, {
+        "name": "Clojure",
+        "level": 3
+    }, {
         "name": "C#",
         "level": 3
     }, {
         "name": "Java",
-        "level": 2
-    }, {
-        "name": "PHP",
         "level": 2
     }],
     "contact": [{
